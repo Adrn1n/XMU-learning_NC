@@ -18,7 +18,7 @@
 function [x,aproxs,opCnt,execT]=Secant(f,x0,k,eps,maxIter)
 tic;
 
-if isa(f,"function_handle")
+if isa(f,"function_handle") && k>0
     x=x0;x1=x+k*eps;aproxs=zeros(maxIter,1);opCnt=0;cnt=0;
 
     while cnt<maxIter

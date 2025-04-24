@@ -49,6 +49,7 @@ g0_sym=f_sym+x;g1_sym=(x+1)^(1/3); % g0_sym: 更加通用的迭代函数, 任何
 f=matlabFunction(f_sym);df_dx=matlabFunction(df_dx_sym);g0=matlabFunction(g0_sym);g1=matlabFunction(g1_sym);
 
 %{
+二分法初始区间端点, 要求 f(a) * f(b) <= 0
 %}
 a=1;b=2;
 
